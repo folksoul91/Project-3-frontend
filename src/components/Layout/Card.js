@@ -26,12 +26,13 @@ const MediaCard = (props, id) => {
   };
 
   const history = useHistory();
-  const URL = "https://pipiopiproj.herokuapp.com/items/";
+  const URL = "https://funky-shoes.onrender.com/items";
 
   // const items = props.item;
 
   const deleteItem = async (id) => {
-    await fetch(URL + id, {
+    console.log("Deleting item with id:", id);
+    await fetch(`${URL}/${id}`, {
       method: "DELETE",
     });
     props.getShoes();
