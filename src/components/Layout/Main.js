@@ -3,19 +3,21 @@ import { useEffect } from "react";
 import "./Main.css";
 
 const Main = (props) => {
+  const { getShoes, items, user, addToCartFn } = props;
+
   useEffect(() => {
-    props.getShoes();
-  }, [props.getShoes]);
+    getShoes();
+  }, [getShoes]);
 
   const loaded = () => {
-    return props.items.map((item) => (
+    return items.map((item) => (
       <div className="main-item" key={item._id}>
         <MediaCard
           mediaCardKey={item._id}
           item={item}
-          getShoes={props.getShoes}
-          user={props.user}
-          addToCartFn={props.addToCartFn}
+          getShoes={getShoes}
+          user={user}
+          addToCartFn={addToCartFn}
         />
       </div>
     ));
