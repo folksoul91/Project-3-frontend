@@ -5,7 +5,7 @@ import "./Main.css";
 const Main = (props) => {
   useEffect(() => {
     props.getShoes();
-  }, []);
+  }, [props.getShoes]);
 
   const loaded = () => {
     return props.items.map((item) => (
