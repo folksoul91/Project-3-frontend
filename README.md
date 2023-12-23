@@ -21,7 +21,7 @@ FunkyShoes is a fun ecommerce website that allows the user to purchase funky sho
 
 Check out our deployed web application below:
 
-Deployed Website:https://funkyshoes.netlify.app/
+Deployed Website:https://dapper-croquembouche-b49505.netlify.app
 
 ![alt text](./src/image/header.png)
 
